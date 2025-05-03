@@ -2,7 +2,6 @@ node_modules/
 /.env
 /logs
 *.tmp
-e2e.js
 app.css
 app.js
 app.js.LICENSE.txt
