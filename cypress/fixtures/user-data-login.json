@@ -1,0 +1,18 @@
+{
+  "usersLogin": [
+    {
+        "userName": "marjorieqa",
+        "password": "123456"        
+      },    
+    
+    {
+      "userName": "RobertoCarlos",
+      "password": "hello@cypress.io"      
+    },
+
+    {
+      "userName": "Carminha123",
+      "password": "123123"      
+    }
+  ]
+}

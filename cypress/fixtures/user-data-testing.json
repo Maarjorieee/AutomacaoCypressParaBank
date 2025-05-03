@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+        "userName": "marjorieqa",
+        "password": "123456",
+        "firstName": "Marjorie",
+        "lastName": "QA",
+        "streetName": "Tests Street 123",
+        "cityName": "Guarujá",
+        "stateName": "SP",
+        "zipCode": "13212-380",
+        "phoneNumber": "123456789",
+        "ssn": "10101010"
+      },
+    
+    
+    {
+      "userName": "RobertoCarlos",
+      "password": "hello@cypress.io",
+      "firstName": "Roberto",
+      "lastName": "Carlos",
+      "streetName": "Rua do Sol",
+      "cityName": "São Paulo",
+      "stateName": "SP",
+      "zipCode": "12345678",
+      "phoneNumber": "139 1234-5678",
+      "ssn": "123-45-6789"
+    },
+
+    {
+      "userName": "Carminha123",
+      "password": "123123",
+      "firstName": "Carminha",
+      "lastName": "Tufão",
+      "streetName": "Avenida Brasil",
+      "cityName": "Rio de Janeiro",
+      "stateName": "RJ",
+      "zipCode": "1010231039",
+      "phoneNumber": "21 3344-2200",
+      "ssn": "059-294-1234"
+    }
+  ]
+}
