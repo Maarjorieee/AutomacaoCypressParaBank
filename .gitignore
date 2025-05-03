@@ -1,0 +1,14 @@
+node_modules/
+/.env
+/logs
+*.tmp
+cypress.config.js
+package-lock.json
+package.json
+e2e.js
+app.css
+app.js
+app.js.LICENSE.txt
+downloads
+reports
+fixtures
