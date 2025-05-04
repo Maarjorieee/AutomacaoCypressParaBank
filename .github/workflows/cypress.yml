@@ -23,7 +23,7 @@ jobs:
 
       - name: Salvar artefatos (vídeos e screenshots)
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-artifacts
           path: |
@@ -32,7 +32,7 @@ jobs:
 
       - name: Salvar relatório HTML
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: relatorio-html
           path: cypress/reports/html
