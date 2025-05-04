@@ -27,12 +27,12 @@ jobs:
         with:
           name: videos-e-screenshots
           path: |
-            cypress/videos
-            cypress/screenshots
+            cypress/videos   # Ensure this path exists
+            cypress/screenshots  # Ensure this path exists
 
       - name: Salvar relatório HTML
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: relatorio-html
-          path: cypress/reports/html
+          path: cypress/reports/html  # Ensure this path exists
