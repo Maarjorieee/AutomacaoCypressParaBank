@@ -18,15 +18,21 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar Cypress
-        run: npm run test
+      - name: Rodar testes com relatório
+        run: npm run test:report
 
-      - name: Salvar artefatos (vídeos e relatórios)
+      - name: Salvar artefatos (vídeos e screenshots)
         if: always()
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v3
         with:
           name: cypress-artifacts
           path: |
             cypress/videos
             cypress/screenshots
-            cypress/reports/html
+
+      - name: Salvar relatório HTML
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: relatorio-html
+          path: cypress/reports/html
