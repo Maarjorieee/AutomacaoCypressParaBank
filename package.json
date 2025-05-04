@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "generate-report": "npx marge cypress/reports/output.json -f report -o cypress/reports/html",
+    "generate-report": "npx marge cypress/reports/html/*.json -f report -o cypress/reports/html",
     "test:report": "npm run test && npm run generate-report"
   },
   "author": "",
