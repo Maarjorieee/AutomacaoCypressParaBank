@@ -21,18 +21,19 @@ jobs:
       - name: Rodar testes com relatório
         run: npm run test:report
 
-      - name: Salvar vídeos e screenshots
-        if: always()
+      - name: Salvar artefatos (vídeos e relatórios)
+        if: always()  # <-- importante para salvar mesmo em caso de falha nos testes
         uses: actions/upload-artifact@v3
         with:
-          name: videos-e-screenshots
+          name: cypress-artifacts
           path: |
             cypress/videos
             cypress/screenshots
+            mochawesome-report
 
       - name: Salvar relatório HTML
         if: always()
         uses: actions/upload-artifact@v3
         with:
           name: relatorio-html
-          path: cypress/reports/html        
+          path: cypress/reports/html
