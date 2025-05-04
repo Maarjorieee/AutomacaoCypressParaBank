@@ -10,11 +10,9 @@ module.exports = defineConfig({
     reporter:'mochawesome',
     reporterOptions: {
       reportDir: 'cypress/reports/html',
-      overwrite: false,
+      overwrite: true,
       html: true,
-      json: false,
-      timestamp: 'yyyy-mm-dd_HH-MM-ss',
-      screenshotsFolder: 'cypress/screenshots'
+      json: false
     },
   },
 });
