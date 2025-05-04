@@ -14,6 +14,7 @@ module.exports = defineConfig({
       html: true,
       json: false,
       timestamp: 'yyyy-mm-dd_HH-MM-ss',
+      screenshotsFolder: 'cypress/screenshots'
     },
   },
 });

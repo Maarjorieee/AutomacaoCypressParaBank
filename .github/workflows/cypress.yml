@@ -10,8 +10,29 @@ jobs:
       - name: Checkout do repositório
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar Cypress
-        run: npx cypress run
+      - name: Rodar testes com relatório
+        run: npm run test:report
+
+      - name: Salvar vídeos e screenshots
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: videos-e-screenshots
+          path: |
+            cypress/videos
+            cypress/screenshots
+
+      - name: Salvar relatório HTML
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: relatorio-html
+          path: cypress/reports/html
