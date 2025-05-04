@@ -22,7 +22,7 @@ jobs:
         run: npm run test:report
 
       - name: Salvar artefatos (vídeos e relatórios)
-        if: always()  # <-- importante para salvar mesmo em caso de falha nos testes
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cypress-artifacts
