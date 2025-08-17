@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-17T21:35:57.298Z",
+    "end": "2025-08-17T21:36:36.742Z",
+    "duration": 39444,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b61c49cb-0e54-48e1-9ab7-cce6cbbb50c3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\users-actions.cy.js",
+      "file": "cypress\\e2e\\users-actions.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+          "title": "User's Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should register a new user: Marjorie QA",
+              "fullTitle": "User's Actions Should register a new user: Marjorie QA",
+              "timedOut": null,
+              "duration": 6495,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.userInformationRegister(user.firstName, user.lastName, user.streetName, user.cityName, user.stateName, user.zipCode, user.phoneNumber, user.ssn);\ncy.userCreation(user.userName, user.password);\ncy.userCreationConfirmationMessage(user.userName);",
+              "err": {},
+              "uuid": "69f6558e-5df9-43fd-b515-34dbd6b1956c",
+              "parentUUID": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should register a new user: Roberto C.",
+              "fullTitle": "User's Actions Should register a new user: Roberto C.",
+              "timedOut": null,
+              "duration": 4508,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.userInformationRegister(user.firstName, user.lastName, user.streetName, user.cityName, user.stateName, user.zipCode, user.phoneNumber, user.ssn);\ncy.userCreation(user.userName, user.password);\ncy.userCreationConfirmationMessage(user.userName);",
+              "err": {},
+              "uuid": "a916bfde-c64f-4ec5-8ee6-31b3712c3d04",
+              "parentUUID": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should register a new user: Carminha Tufão",
+              "fullTitle": "User's Actions Should register a new user: Carminha Tufão",
+              "timedOut": null,
+              "duration": 4920,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.userInformationRegister(user.firstName, user.lastName, user.streetName, user.cityName, user.stateName, user.zipCode, user.phoneNumber, user.ssn);\ncy.userCreation(user.userName, user.password);\ncy.userCreationConfirmationMessage(user.userName);",
+              "err": {},
+              "uuid": "2effb8e1-852d-446d-aed8-91473f260969",
+              "parentUUID": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should deposit money in the user's account",
+              "fullTitle": "User's Actions Should deposit money in the user's account",
+              "timedOut": null,
+              "duration": 5909,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.userLoginIn(user.userName, user.password);\ncy.transferingFundsFromCheckingToSavings();",
+              "err": {},
+              "uuid": "f501cdef-b1d5-4c22-9022-5d9a28f3f52c",
+              "parentUUID": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should deposit money in the user's account",
+              "fullTitle": "User's Actions Should deposit money in the user's account",
+              "timedOut": null,
+              "duration": 6519,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.userLoginIn(user.userName, user.password);\ncy.transferingFundsFromCheckingToSavings();",
+              "err": {},
+              "uuid": "c06d68b7-a809-43dc-8307-e2121b273c5e",
+              "parentUUID": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should deposit money in the user's account",
+              "fullTitle": "User's Actions Should deposit money in the user's account",
+              "timedOut": null,
+              "duration": 5956,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.userLoginIn(user.userName, user.password);\ncy.transferingFundsFromCheckingToSavings();",
+              "err": {},
+              "uuid": "1fd7cc7b-473c-4aa7-b004-e34b0c5d7eb6",
+              "parentUUID": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Reset database",
+              "fullTitle": "User's Actions Reset database",
+              "timedOut": null,
+              "duration": 1979,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.resetData();",
+              "err": {},
+              "uuid": "8c1cf636-86ac-476f-a5a1-e56813b003ba",
+              "parentUUID": "abe315dd-24ad-4a12-96db-cedf00ce8ab2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "69f6558e-5df9-43fd-b515-34dbd6b1956c",
+            "a916bfde-c64f-4ec5-8ee6-31b3712c3d04",
+            "2effb8e1-852d-446d-aed8-91473f260969",
+            "f501cdef-b1d5-4c22-9022-5d9a28f3f52c",
+            "c06d68b7-a809-43dc-8307-e2121b273c5e",
+            "1fd7cc7b-473c-4aa7-b004-e34b0c5d7eb6",
+            "8c1cf636-86ac-476f-a5a1-e56813b003ba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 36286,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/html",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
