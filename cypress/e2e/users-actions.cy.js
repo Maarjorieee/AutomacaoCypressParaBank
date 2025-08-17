@@ -24,9 +24,9 @@ describe("User's Actions", () => {
   });
 
   usersLogin.forEach((user) => {
-    it("Should deposit money in the user's account", () => {
+    it(`Should deposit money for user: ${user.userName}`, () => {
       cy.userLoginIn(user.userName, user.password);
-      cy.transferingFundsFromCheckingToSavings();
+      cy.transferFundsToSavings();
     });
   });
 

@@ -31,27 +31,29 @@ Cypress.Commands.add(
 
 Cypress.Commands.add("userCreationConfirmationMessage", (userName) => {
   cy.get(".title").should("have.text", `Welcome ${userName}`);
+  cy.log(`User: ${userName} created successfully`);
 });
 
 Cypress.Commands.add("userLoginIn", (userName, password) => {
-  cy.get(":nth-child(2) > .input").type(userName);
-  cy.get(":nth-child(4) > .input").type(password);
+  cy.get('input[name="username"]').type(userName);
+  cy.get('input[name="password"]').type(password);
   cy.get('input[value="Log In"]').click();
+  cy.log(`User: ${userName} logged in successfully`);
 });
 
-Cypress.Commands.add("transferingFundsFromCheckingToSavings", () => {
+Cypress.Commands.add("transferFundsToSavings", () => {
   cy.get("#leftPanel > ul > :nth-child(1) > a").click();
   cy.get("#type").select("SAVINGS");
-  cy.get("form").click();
-  cy.wait(1000);
-  cy.get("form > div > .button").click();
-  cy.wait(1000);
+  cy.get("form").click().wait(1000);  
+  cy.get("form > div > .button").click().wait(1000);
   cy.get("#newAccountId").click();
   cy.get("tr > :nth-child(2) > a").click();
+  cy.log("Funds transferred to savings account successfully");
 });
 
 Cypress.Commands.add("resetData", () => {
-  cy.get('#headerPanel > ul.leftmenu > li:nth-child(6) > a').click();
+  cy.get('.leftmenu > :nth-child(6) > a').click();
   cy.contains('button', 'Clean').click();  
   cy.get('#rightPanel > p > b').should('have.text', 'Database Cleaned');
+  cy.log("Database reset successfully");
 })
