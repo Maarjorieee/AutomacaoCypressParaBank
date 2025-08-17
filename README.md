@@ -1,3 +1,4 @@
+[![Cypress Tests](https://github.com/Maarjorieee/AutomacaoCypressParaBank/actions/workflows/cypress.yml/badge.svg)](https://github.com/Maarjorieee/AutomacaoCypressParaBank/actions/workflows/cypress.yml)
 # Projeto AutomacaoCypressParaBank
 Repositório dedicado para Automações de cenários de testes em Cypress no site do ParaBank
 
