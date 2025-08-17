@@ -36,3 +36,6 @@ jobs:
         with:
           name: relatorio-html
           path: cypress/reports/html
+
+      - name: Run Cypress with Dashboard
+        run: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}     
