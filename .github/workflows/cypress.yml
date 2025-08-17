@@ -18,6 +18,10 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Gerar BUILD_ID com timestamp e branch
+        id: buildinfo
+        run: echo "BUILD_ID=build-${{ github.ref_name }}-$(date +%Y-%m-%dT%H-%M-%S)" >> $GITHUB_ENV
+
       - name: Rodar testes com relatório
         run: npm run test:report
 
@@ -38,4 +42,7 @@ jobs:
           path: cypress/reports/html
 
       - name: Run Cypress with Dashboard
-        run: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}     
+        run: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --ci-build-id ${{ env.BUILD_ID }}
+
+      - name: Mostrar BUILD_ID no log
+        run: "echo \"Build ID gerado: ${{ env.BUILD_ID }}\""
