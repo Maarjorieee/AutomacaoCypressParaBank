@@ -42,7 +42,7 @@ jobs:
           path: cypress/reports/html
 
       - name: Run Cypress with Dashboard
-        run: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --ci-build-id ${{ env.BUILD_ID }}
+        run: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --ci-build-id ${{ env.BUILD_ID }} --group "Testes Integração Contínua"
 
       - name: Mostrar BUILD_ID no log
         run: "echo \"Build ID gerado: ${{ env.BUILD_ID }}\""
