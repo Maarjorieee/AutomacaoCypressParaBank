@@ -16,7 +16,7 @@ Essa abordagem torna o projeto mais robusto, confiável e profissional, permitin
 - Baixe meu projeto em sua máquina e o importe no VSCode;
 - Utilize no terminal o comando --> npx cypress open;
 - Será aberta a "Central" de comando do Cypress, basta escolher qual navegador você utilizará para rodar os testes e assim, clique no Spec chamado --> Users-actions;
-- O teste será executado em vídeo no Dashboard e serão exibidos todos os detalhes de cada etapa do teste.
+- O teste será executado em vídeo e serão exibidos todos os detalhes de cada etapa do teste.
 
 # Informação de Contato
 Para me contatar, podem me achar em meu perfil do Linkedin --> https://www.linkedin.com/in/marjorie-nascimento-668185114/
